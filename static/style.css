@@ -1,3 +1,31 @@
-h1 {
-    text-align: left;
+.bg-white {
+    background-color: #F9F7F7;
+}
+
+.bg-blue-light {
+    background-color: #DBE2EF;
+}
+
+.bg-blue-dark {
+    background-color: #3F72AF;
+}
+
+.bg-navy {
+    background-color: #112D4E;
+}
+
+.white {
+    color: #F9F7F7;
+}
+
+.blue-light {
+    color: #DBE2EF;
+}
+
+.blue-dark {
+    color: #3F72AF;
+}
+
+.navy {
+    color: #112D4E;
 }
