@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Chris' Portfolio</title>
-        {{ bootstrap.load_css() }}
-        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    </head>
-    <header>
-        <div class="container-lg">
-            <nav class="navbar navbar-expand-lg bg-blue-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand navy" href="{{ url_for('home') }}">Chris' Portfolio</a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link navy" href="{{ url_for('about') }}">about</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+{% extends "base.html.jinja" %}
+{% block content %}
 
-    <body class="white">
-
-    </body>
-</html>
+{% endblock content %}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chris' Portfolio</title>
+    {{ bootstrap.load_css() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="white">
+
+    <nav class="navbar navbar-expand-lg bg-blue-light">
+        <div class="container-fluid">
+            <a class="navbar-brand navy" href="{{ url_for('home') }}"><h1>Chris' Portfolio</h1></a>
+            <div class="justify-content-end">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navy" href="{{ url_for('about') }}"><h3>about</h3></a>
+                    </li>
+                </ul>
+            </div>    
+        </div>
+    </nav>
+
+    <div id="content" class="">{% block content %}{% endblock content %}</div>
+
+    <footer class="bg-blue-light py-2">
+        <div class="container-lg flex-column">
+            <div class="d-flex justify-content-center my-2">
+                <h2 class="navy">Contact me:</h2>
+            </div>
+            <div class="d-flex justify-content-center my-2">
+                <a href="mailto:christian02@hotmail.com"><img class="logo mx-2" src="{{ url_for('static', filename='logos/mail.svg') }}" alt="Email logo"></a>
+                <a href="https://github.com/Nahdar"><img class="logo mx-2" src="{{ url_for('static', filename='logos/github.svg') }}" alt="Github logo"></a>
+                <a href="https://www.linkedin.com/in/nahdar/"><img class="logo mx-2" src="{{ url_for('static', filename='logos/linkedin.png') }}" alt="Linkedin logo"></a>
+            </div>
+            <div class="d-flex justify-content-center my-2">
+                <p class="navy">Check out this page's <a href="https://github.com/Nahdar/WebPortfolio">source code</a>!</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
